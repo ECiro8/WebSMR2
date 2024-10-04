@@ -6,23 +6,53 @@
     <title>Formularios</title>
 </head>
 <body>
-    <h1>Formularios en HTML</h1>
+    <h1>Restaurante el centollo</h1>
     <!-- Todos los formularios van entre la etiqueta form-->
     <form action="/formulario.html" method="POST">
         <fieldset>
-            <legend>Formulario de Registro</legend>
+            <legend><h3>Haz tu reserva</h3></legend>
             <p>
                 <label for="nombre">Nombre: </label>
                 <input type="text" id="nombre" name="nombre_principal" placeholder="Escribe tu Nombre">
             </p>
             <p>
-                <label for="email">Email</label>
+                <label for="email">Correo electronico</label>
                 <input type="email" name="correo_electronico" id="email" placeholder="E-mail">
             </p>
             <p>
-                <label for="password">Contraseña</label>
-                <input type="password" name="contrasena" id="password" placeholder="Contraseña">
+                <label for="num">Teléfono</label>
+                <input type="text" maxlength="9" name="Numero" id="num" placeholder="66887755">
             </p>
+            <p>
+                <label for="hora">Franja Horaria</label>
+                <select id="hora">
+                    <optgroup label="Mañana ">
+                    <option>9:30 - 10:30</option>
+                    <option>10:30 - 11:30</option>
+                    <option>11:30 - 12:30</option>
+                    <option>12:30 - 13:30</option>
+                    </optgroup>
+                    <optgroup label="Tarde ">
+                     <option> 13:30 +</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="com">Comensales</label>
+                <input type="number"  min="1" max="10" name="Numero" id="com" placeholder="2">
+            </p>
+
+            <p>
+                <label for="mant">Color del mantel</label>
+                <input type="color" id="mant" placeholder="66887755">
+            </p>
+            <p>
+                <label for="esp">Color del mantel</label>
+                <br>
+                <textarea  rows="3" id="esp" placeholder="alergias, tronas...." ></textarea>
+            </p>
+
         </fieldset> 
         <fieldset>
             <legend>Finalizar</legend>
