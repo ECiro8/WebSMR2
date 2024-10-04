@@ -7,7 +7,7 @@
 </head>
 <body>
     <fieldset><legend>Nombre completo</legend>
-        <form>
+        <form action="index2.html" method="get">
             <label for="name">Dinos tu nombre: </label>
             <input id="name" type="name" placeholder="Nombre completo...">
         </form>
@@ -15,7 +15,15 @@
     <fieldset><legend>¿Cómo quieres el batido?</legend>
         <form>
             <label for="pequeno">Pequeño </label>
-            <input id="pequeno" type="radio" placeholder="Nombre completo...">
+            <input id="pequeno" name="batido" type="radio" value="pequeno">
+            <br>
+            <label for="mediano">Mediano</label>
+            <input id="mediano" name="batido" type="radio" value="mediano">
+            <br>
+            <label for="grande">Grande </label>
+            <input id="grande" name="batido" type="radio" value="grande">
+            <textarea rows="3"></textarea> 
+            <input type="submit" placeholder="enviar">
         </form>
     </fieldset>
     
