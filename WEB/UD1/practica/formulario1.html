@@ -1,71 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
+
+    <style>
+        body {
+            background-color: bisque;
+            font-family: Arial, Helvetica, ;
+        }
+
+        fieldset {
+            border: none;
+        }
+    </style>
+
 </head>
+
 <body>
     <h1>Restaurante el centollo</h1>
-    <!-- Todos los formularios van entre la etiqueta form-->
+    <br>
     <form action="/formulario.html" method="POST">
         <fieldset>
-            <legend><h3>Haz tu reserva</h3></legend>
+            <legend>
+                <h3>Haz tu reserva</h3>
+            </legend>
             <p>
                 <label for="nombre">Nombre: </label>
-                <input type="text" id="nombre" name="nombre_principal" placeholder="Escribe tu Nombre">
+                <input type="text" id="nombre" value="nombre" name="nombre_principal" placeholder="Escribe tu Nombre">
             </p>
             <p>
                 <label for="email">Correo electronico</label>
-                <input type="email" name="correo_electronico" id="email" placeholder="E-mail">
+                <input type="email" value="email" name="correo_electronico" id="email" placeholder="E-mail">
             </p>
             <p>
                 <label for="num">Teléfono</label>
-                <input type="text" maxlength="9" name="Numero" id="num" placeholder="66887755">
+                <input type="text" value="numerotel" maxlength="9" name="Numero" id="num" placeholder="66887755">
             </p>
             <p>
                 <label for="hora">Franja Horaria</label>
-                <select id="hora">
+                <select id="hora" value="horario">
                     <optgroup label="Mañana ">
-                    <option>9:30 - 10:30</option>
-                    <option>10:30 - 11:30</option>
-                    <option>11:30 - 12:30</option>
-                    <option>12:30 - 13:30</option>
+                        <option>9:30 - 10:30</option>
+                        <option>10:30 - 11:30</option>
+                        <option>11:30 - 12:30</option>
+                        <option>12:30 - 13:30</option>
                     </optgroup>
                     <optgroup label="Tarde ">
-                     <option> 13:30 +</option>
+                        <option> 13:30 +</option>
                     </optgroup>
                 </select>
             </p>
 
             <p>
                 <label for="com">Comensales</label>
-                <input type="number"  min="1" max="10" name="Numero" id="com" placeholder="2">
+                <input type="number" value="num_comensales" min="1" max="10" name="Numero" id="com" placeholder="2">
             </p>
 
             <p>
                 <label for="mant">Color del mantel</label>
-                <input type="color" id="mant" placeholder="66887755">
+                <input type="color" value="col_mantel" id="mant" placeholder="66887755">
             </p>
             <p>
-                <label for="esp">Color del mantel</label>
+                <label for="esp">Demandas especiales</label>
                 <br>
-                <textarea  rows="3" id="esp" placeholder="alergias, tronas...." ></textarea>
+                <textarea value="extras" rows="3" id="esp" placeholder="alergias, tronas...."></textarea>
             </p>
 
-        </fieldset> 
+        </fieldset>
         <fieldset>
             <legend>Finalizar</legend>
             <p>
                 <input type="submit" value="Enviar Formulario">
                 <input type="reset" value="Borrar todos los datos">
             </p>
-        </fieldset> 
+        </fieldset>
     </form>
 </body>
+
 </html>
 
-<!-- TIPOS DE INPUTS      
+<!-- TIPOS DE INPUTS       Gracias Alberto  🙏🔥🔥
  <input type="button">
 <input type="color">
 <input type="date">
