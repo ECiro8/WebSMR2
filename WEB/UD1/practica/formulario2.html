@@ -8,7 +8,7 @@
 
     <style>
         body {
-            background-color: bisque;
+            background-color: lightgrey;
             font-family: Arial, Helvetica, ;
         }
 
@@ -20,53 +20,52 @@
 </head>
 
 <body>
-    <h1>Restaurante el centollo</h1>
+    <h1>Formulario de registro</h1>
     <br>
-    <form action="/formulario.html" method="POST">
+    <form action="/formulario2.html" method="POST">
         <fieldset>
-            <legend>
-                <h3>Haz tu reserva</h3>
-            </legend>
             <p>
                 <label for="nombre">Nombre: </label>
                 <input type="text" id="nombre"  name="nombre_principal" placeholder="Escribe tu Nombre">
             </p>
             <p>
-                <label for="email">Correo electronico: </label>
-                <input type="email"  name="correo_electronico" id="email" placeholder="E-mail">
+                <label for="apell">Apellidos: </label>
+                <input type="text" id="apell"  name="apellido" placeholder="Escribe tu Apellido">
             </p>
             <p>
-                <label for="num">Teléfono: </label>
-                <input type="text"  maxlength="9" name="Numerotell" id="num" placeholder="66887755">
+                <label for="sex">Sexo: </label>
+                <input type="radio" value="hombre" name="sex" id="sex">
+                hombre
+                <input type="radio" value="mujer" name="sex" id="sex">
+                mujer
             </p>
             <p>
-                <label for="hora">Franja Horaria: </label>
+                <label for="correo">Correo: </label>
+                <input id="correo" name="correo" type="email" placeholder="email@ejemplo.com">
+            </p>
+
+            <p>
+                <label for="hora">Población: </label>
                 <select id="hora"  name="hora">
-                    <optgroup label="Mañana ">
-                        <option>9:30 - 10:30</option>
-                        <option>10:30 - 11:30</option>
-                        <option>11:30 - 12:30</option>
-                        <option>12:30 - 13:30</option>
-                    </optgroup>
-                    <optgroup label="Tarde ">
-                        <option> 13:30 +</option>
+                    <optgroup label="España ">
+                        <option>Alicante</option>
+                        <option>Madrid</option>
+                        <option>Barcelona</option>
+                        <option>Teruel</option>
                     </optgroup>
                 </select>
             </p>
-
             <p>
-                <label for="com">Comensales: </label>
-                <input type="number"  min="1" max="10" name="NumeroCom" id="com" placeholder="2">
-            </p>
-
-            <p>
-                <label for="mant">Color del mantel: </label>
-                <input type="color" name="colormant" id="mant" placeholder="66887755">
+                <label for="desc">Descripcion: </label>
+                <textarea  rows="6" name="desc" id="desc" placeholder="breve descripción"></textarea>
             </p>
             <p>
-                <label for="esp">Demandas especiales: </label>
-                <br>
-                <textarea  rows="3" name="Demandas esp" id="esp" placeholder="alergias, tronas...."></textarea>
+                <input type="checkbox" name="ofertas" id="ofertas">
+                <label for="ofertas">Deseo recibir información sobre noticias y ofertas.</label>
+            </p>
+            <p>
+                <input type="checkbox" name="condiciones" id="condiciones">
+                <label for="condiciones">Declaro haber leido y aceptar las condiciones generales del programa y normativa sobre el uso.</label>
             </p>
 
         </fieldset>
