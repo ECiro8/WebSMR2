@@ -1,0 +1,53 @@
+body{
+
+    margin: 0px;
+    padding: 0px;
+    background-color: darkgray;
+   
+
+}
+
+.container {
+    background-color: pink;
+    border: 2px groove lightpink;
+    margin: 5px  auto;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+::selection{
+    background-color: pink;
+    color: cornflowerblue;
+}
+
+.container > div{
+    background-color: cornflowerblue;
+    margin: 2px ;
+    align-items: center;
+    border: groove lightpink;
+    color: aliceblue;
+}
+
+
+
+.item{
+    height: 20px;
+    order: 4;
+}
+.item2{
+    height: 30px;
+    order: 2;
+}
+.item3{
+    height: 40px;
+    order: 1;
+}
+.item4{
+    height: 60px;
+    order: 3;
+}
+
+
