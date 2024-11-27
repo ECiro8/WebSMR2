@@ -19,7 +19,7 @@ button{
     border: none;
     border-radius: 50px;
     padding: 10px;
-    transition: 1s;
+    transition: 0.8s;
     margin: 30px;
 }
 button:hover{
