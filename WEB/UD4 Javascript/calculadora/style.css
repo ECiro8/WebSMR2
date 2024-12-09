@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    height: 100vh;
+    background:  linear-gradient(145deg, mediumslateblue 0%, lightgreen  100%);
+    font-family: handjet;
+}
+
+h1{
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    transition: 2s;
+}
+h1:hover{
+    font-size: 80px;
+}
+.contenedor{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+  .contenedor2{
+    height: 500px;
+    width: 740px;
+    display: flex;
+    position: fixed;
+    top: 250px;
+    left: 20vh;
+    z-index: 0;
+    
+}
+.fondocalc{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid;
+    height: 540px;
+    width: 275px;
+    z-index: -1;
+    position: fixed;
+    top: 260px;
+    left: 40vh;
+}
+.formularios{
+    position: absolute;
+    top: 30px;
+    left: 30%;
+    width: 22.3vh;
+    z-index: 1;
+}
+.numeros{
+    position: absolute;
+    top: 150px;
+    left: 30%;
+    height: 340px;
+    width: 20vh;
+    z-index: 2;
+}
+.operaciones{
+  
+    position: absolute;
+    top: 148px;
+    left: 52%;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    z-index: 3;
+}
+
+.formus{
+    display: flex;
+    margin: 2px;
+    border: none;
+    padding: 15px;
+    flex-direction: column;
+    width: 85%;
+    font-family: handjet;
+    font-size: 4vh;
+    max-height: 20px;
+    transition: 2s;
+}
+#resultado{
+   color: gray;
+}
+button{
+    border:  none;
+    padding: 15px;
+    font-family: handjet;
+    font-size: 40px;
+    margin: 2px;
+    transition: 1s ease;
+}
+button:hover{
+    border: dashed 1px;
+    
+}
+button:active{
+    border: none;
+    padding: 10px;
+}
+.igual{
+    width: 100px;
+    background-color: lightsalmon;
+}
+.igual:hover{
+    background-color: brown;
+}
+.borrar{
+    width: 212px;
+    background-color: lightslategray;
+}
+.borrar:hover{
+    background-color: slateblue;
+}
+
+.sumar{
+    background-color: lightgreen;
+}
+
+.sumar:hover{
+    background-color: green;
+}
+
+.restar{
+    background-color: lightcoral;
+}
+
+.restar:hover{
+    background-color: red;
+}
+
+.multiplicar{
+    background-color: lightblue;
+}
+
+.multiplicar:hover{
+    background-color: blue;
+}
+
+.dividir{
+    background-color: lightgoldenrodyellow;
+}
+
+.dividir:hover{
+    background-color: yellow;
+}
