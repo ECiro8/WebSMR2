@@ -19,64 +19,54 @@ h1:hover{
     display: flex;
     height: 100%;
     width: 100%;
-    align-items: center;
+    justify-content: center;
 }
   .contenedor2{
     height: 500px;
-    width: 740px;
-    display: flex;
-    position: fixed;
-    top: 250px;
-    left: 20vh;
     z-index: 0;
-    
-}
-.fondocalc{
+    display: grid;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    border: solid;
-    height: 540px;
-    width: 275px;
-    z-index: -1;
-    position: fixed;
-    top: 260px;
-    left: 40vh;
+    padding: 20px;
+    transition: ease-in 1s;
 }
-.formularios{
-    position: absolute;
-    top: 30px;
-    left: 30%;
-    width: 22.3vh;
-    z-index: 1;
+.contenedor2:hover{
+    background-color: rgba(147, 112, 216, 0.5);
+    padding: 30px;
 }
+
 .numeros{
-    position: absolute;
-    top: 150px;
-    left: 30%;
     height: 340px;
     width: 20vh;
     z-index: 2;
+   
 }
 .operaciones{
-  
-    position: absolute;
-    top: 148px;
-    left: 52%;
     margin: 2px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: -342px;
+    left: 164px;
     height: 340px;
-    z-index: 3;
+    width: 50px;
+    z-index: 2;
 }
-
+.formularios{
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
 .formus{
     display: flex;
     margin: 2px;
     border: none;
     padding: 15px;
     flex-direction: column;
-    width: 85%;
     font-family: handjet;
     font-size: 4vh;
+    width: 182px;
     max-height: 20px;
     transition: 2s;
 }
