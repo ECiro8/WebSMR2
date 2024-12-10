@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    height: 100vh;
-    background:  linear-gradient(145deg, mediumslateblue 0%, lightgreen  100%);
+    height: 85vh;
+    background:  linear-gradient(145deg, mediumslateblue 0%, lightgreen  100%) fixed;
     font-family: handjet;
 }
 
@@ -139,4 +139,13 @@ button:active{
 
 .dividir:hover{
     background-color: yellow;
+}
+
+.foot{
+    transition: 2s ease;
+}
+.foot:hover{
+   
+    font-size: 30px;
+    color: white;
 }
