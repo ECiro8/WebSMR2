@@ -13,7 +13,8 @@ h1{
     transition: 2s;
 }
 h1:hover{
-    font-size: 80px;
+    font-size: 60px;
+    color: white;
 }
 .contenedor{
     display: flex;
@@ -30,10 +31,11 @@ h1:hover{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     transition: ease-in 1s;
+    border-radius: 5px;
 }
 .contenedor2:hover{
-    background-color: rgba(147, 112, 216, 0.5);
-    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px;
 }
 
 .numeros{
@@ -53,28 +55,31 @@ h1:hover{
     width: 50px;
     z-index: 2;
 }
-.formularios{
-    display: flex;
-    justify-content: center;
-    z-index: 2;
-}
+
 .formus{
     display: flex;
     margin: 2px;
     border: none;
+    border-radius: 5px;
     padding: 15px;
     flex-direction: column;
     font-family: handjet;
     font-size: 4vh;
     width: 182px;
-    max-height: 20px;
+    max-height: 30px;
+    max-width: 182px;
+    min-width: 182px;  
     transition: 2s;
+    background-color: slategray;
 }
-#resultado{
-   color: gray;
+.formus:hover{
+    background-color: darkslategray;
+    color: white;
 }
+
 button{
-    border:  none;
+    border: none;
+    border-radius: 5px;
     padding: 15px;
     font-family: handjet;
     font-size: 40px;
@@ -83,10 +88,10 @@ button{
 }
 button:hover{
     border: dashed 1px;
-    
 }
 button:active{
-    border: none;
+    transition: 50ms ease-in;
+    border: dotted 1px;
     padding: 10px;
 }
 .igual{

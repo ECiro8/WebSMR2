@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora ECG</title>
     <link rel="stylesheet" href="style.css">
+
     <script src="script.js"></script>
+    
 </head>
 <body>
 
@@ -14,35 +16,34 @@
         <div class="contenedor">  
            
             <div class="contenedor2">
-                
                 <div class="formularios">
-                        <form>
-                            <textarea class="formus" type="text" placeholder="operación" id="operasao"></textarea>
+                        
+                            <textarea class="formus" placeholder="operación" id="op"></textarea>
                             <textarea  class="formus" id="resultado" placeholder="resultado"></textarea>
-                        </form>
+                       
                     
                     </div>
                     <div class="numeros">
 
-                        <button class="uno" onclick="uno()" value="1">1</button>
+                        <button class="uno" onclick="uno()">1</button>
                         <button class="dos" onclick="dos()">2</button>
                         <button class="tres" onclick="tres()">3</button>
                         <button class="cuatro" onclick="cuatro()">4</button>
-                        <button class="cinco">5</button>
-                        <button class="seis">6</button>
-                        <button class="siete">7</button>
-                        <button class="ocho">8</button>
-                        <button class="nueve">9</button>
-                        <button class="cero">0</button>
-                        <button class="igual">=</button>
-                        <button class="borrar">C</button>
+                        <button class="cinco" onclick="cinco()">5</button>
+                        <button class="seis" onclick="seis()">6</button>
+                        <button class="siete" onclick="siete()">7</button>
+                        <button class="ocho" onclick="ocho()">8</button>
+                        <button class="nueve" onclick="nueve()">9</button>
+                        <button class="cero" onclick="cero()">0</button>
+                        <button class="igual" onclick="iguala()">=</button>
+                        <button class="borrar" onclick="borrar()">C</button>
 
                     </div>
                     <div class="operaciones">
-                        <button class="sumar">+</button>
-                        <button class="restar">-</button>
-                        <button class="multiplicar">×</button>
-                        <button class="dividir">÷</button>
+                        <button class="sumar" onclick="mas()">+</button>
+                        <button class="restar" onclick="menos()">-</button>
+                        <button class="multiplicar" onclick="por()">×</button>
+                        <button class="dividir" onclick="entre()">÷</button>
                     </div>
         </div>
 </body>
