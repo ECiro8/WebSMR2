@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+    <style>
+        body{
+            background-color:rgb(228, 203, 172);
+        }
+    
+    </style>
+</head>
+<body>
+
+    <h2>Pedido de pizza</h2>
+
+    <form action="/formulario4.html" method="post">
+        
+    <fieldset>
+        <legend>La Pizza</legend>
+        <p>Ingredientes</p>
+        <p>
+            <input type="checkbox" name="queso" id="queso">
+            <label for="queso">Queso</label>
+            <br>
+            <input type="checkbox" name="pimiento" id="pimiento">
+            <label for="pimiento">Pimiento</label>
+            <br>
+            <input type="checkbox" name="cebolla" id="cebolla">
+            <label for="cebolla">Cebolla</label>
+        </p>
+        <p>
+            <p>Tamaño</p>
+        
+            <input type="radio" id="peq" name="size">
+            <label for="peq">Pequeña</label>
+            <br>
+            <input type="radio" id="med" name="size">
+            <label for="med">Mediana</label>
+            <br>
+            <input type="radio" id="gran" name="size">
+            <label for="gran">Grande</label>
+            
+
+        </p>
+    </fieldset>
+ 
+    <fieldset>
+        <legend>Datos de entrega</legend>
+
+        <label for="name">Nombre</label><input id="name" name="nombre" type="text">
+        <br>
+        <label for="adress">Direccion</label><input id="adress" name="direccion" type="text">
+        <br>
+        <label for="tele">Teléfono</label><input maxlength="9" id="tele" name="telefono" type="tel">
+        <br>
+        <label for="esp">Instrucciones especiales</label>
+        <br>
+        <textarea cols="50" rows="10" id="esp" name="intruccionesesp"></textarea>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Método de pago</legend>
+        <select>
+                
+            <optgroup label="Método 👇💵">
+
+                <option>Efectivo</option>
+                <option>Tarjeta</option>
+                <option>Bizu</option>
+
+            </optgroup>
+
+        </select>
+    </fieldset>
+    <input type="submit" value="OK">
+
+
+    </form>
+
+    
+</body>
+</html>
+
+<!-- TIPOS DE INPUTS       Gracias Alberto  🙏🔥🔥
+ <input type="button">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+<input type="checkbox">
+<input type="radio">
+<textarea rows="10" cols="50">Esto es el contenido</textarea>
+ 
+
+
+
+
+
+
+-->

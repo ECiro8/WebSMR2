@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <style>
+        body {
+            background-color: lightgrey;
+            font-family: Arial, Helvetica, ;
+        }
+
+        fieldset {
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Formulario de registro</h1>
+    <br>
+    <form action="/formulario2.html" method="POST">
+        <fieldset>
+            <p>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre_principal" placeholder="Escribe tu Nombre">
+            </p>
+            <p>
+                <label for="apell">Apellidos: </label>
+                <input type="text" id="apell" name="apellido" placeholder="Escribe tu Apellido">
+            </p>
+            <p>
+                <label for="sex">Sexo: </label>
+                <input type="radio" value="hombre" name="sex" id="sex">
+                hombre
+                <input type="radio" value="mujer" name="sex" id="sex">
+                mujer
+            </p>
+            <p>
+                <label for="correo">Correo: </label>
+                <input id="correo" name="correo" type="email" placeholder="email@ejemplo.com">
+            </p>
+
+            <p>
+                <label for="hora">Población: </label>
+                <select id="hora" name="hora">
+                    <optgroup label="España ">
+                        <option>Alicante</option>
+                        <option>Madrid</option>
+                        <option>Barcelona</option>
+                        <option>Teruel</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="desc">Descripcion: </label>
+                <textarea rows="6" name="desc" id="desc" placeholder="breve descripción"></textarea>
+            </p>
+            <p>
+                <input type="checkbox" name="ofertas" id="ofertas">
+                <label for="ofertas">Deseo recibir información sobre noticias y ofertas.</label>
+            </p>
+            <p>
+                <input type="checkbox" name="condiciones" id="condiciones">
+                <label for="condiciones">Declaro haber leido y aceptar las condiciones generales del programa y
+                    normativa sobre el uso.</label>
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>Finalizar</legend>
+            <p>
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Borrar todos los datos">
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
+
+<!-- TIPOS DE INPUTS       Gracias Alberto  🙏🔥🔥
+ <input type="button">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+<input type="checkbox">
+<input type="radio">
+<textarea rows="10" cols="50">Esto es el contenido</textarea>
+ 
+
+
+
+
+
+
+-->

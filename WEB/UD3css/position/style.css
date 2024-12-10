@@ -1,0 +1,42 @@
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h2{
+background-color: aqua;
+}
+p{
+background-color: beige;
+
+}
+span{
+    background-color: goldenrod;
+
+}
+div{
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    background-color: chocolate;
+    display: inline-block;
+}
+
+button{
+    background-color: chartreuse;
+    border: solid blue;
+    padding: 5px;
+    width: 100px;
+
+}
+button:hover{
+    background-color: plum;
+    border: dashed blue;
+    padding: 5px;
+    width: 100px;
+
+}
