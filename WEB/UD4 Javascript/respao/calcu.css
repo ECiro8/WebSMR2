@@ -1,0 +1,100 @@
+.marco{
+    display: flex;
+    justify-content: center;
+}
+.calculadora{
+    background-color: gray;
+    border-radius: 5px ;
+    padding: 1%;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    width: 500px;
+    height: 800px;
+
+    
+}
+
+#pantalla{
+    border-radius: 5px ;
+    grid-column: 1/5;
+    background-color: darkcyan;
+    margin: 2px;
+    height: 150px;
+}
+.calculadora button{
+    margin: 2px;
+    height: 100px;
+}
+.por{
+    grid-column: 4/5;
+    background-color: lightskyblue;
+    border: none;
+}
+.mas{
+    grid-column: 4/5;
+    background-color: lightgreen;
+    border: none;
+}
+.menos{
+    border: none;
+    grid-column: 4/5;
+    background-color: lightcoral;
+}
+.entre{
+    border: none;
+    grid-column: 4/5;
+    background-color: lightgoldenrodyellow;
+}
+.igual{
+    border: none;
+    grid-column: 1/5;
+    background-color: lightsteelblue;
+}
+.borrar{
+    border: none;
+    grid-column: 1/5;
+    background-color: yellow;
+}
+button:hover{
+    border: none;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+    background-color: darkgrey;
+}
+#uno{
+    grid-columns: 1;
+ }
+ #dos{
+    grid-columns: 1;
+ }
+ #tres{
+    grid-columns: 1;
+ }
+ #cuatro{
+    grid-row: 3;
+ }
+ #cinco{
+    grid-row: 3;
+ }
+ #seis{
+    grid-row: 3;
+ }
+ #siete{
+    grid-row: 4;
+ }
+ #ocho{
+    grid-row: 4;
+ }
+ #nueve{
+    grid-row: 4;
+ }
+ #cero{
+    grid-row: 5;
+    grid-column: 1/4;
+ }
+ 
+
+
+
+
+
